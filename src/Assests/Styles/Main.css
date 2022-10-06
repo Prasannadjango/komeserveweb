@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "sitefont";
+    src: url(../Fonts/Montserrat-Regular.otf),
+    url(../Fonts/Montserrat-Regular.ttf),
+    url(../Fonts/Montserrat-Regular.woff),
+    url(../Fonts/Montserrat-Regular.woff2);
+}
+* {
+    box-sizing: border-box;
+    font-family: "sitefont" ;
+    text-transform: capitalize;
+}
+.Logo{
+    width: 100px;
+    height: 70px;
+}
+.Header_links{
+    
+    align-items: center;
+}
+.Header_links>a{
+   padding-left: 60px !important;
+   color: rgb(137 137 137);
+   font-weight: 600;
+}
+.Header_links>a>button{
+    padding: 15px 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.Header_nav{
+    background-color: #fff;
+    box-shadow: 0 8px 5px -10px #000;
+    margin-bottom: 5px!important;
+    position: fixed!important;
+    width: 100%;
+    z-index: 2;
+   
+}
