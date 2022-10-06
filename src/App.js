@@ -4,12 +4,13 @@ import './Assests/Styles/Bootstrap.css';
 import './Assests/Styles/Responsive.css';
 
 import Header from './Components/Header';
+import Homepage from './Pages/Homepage';
 
 function App() {
   return (
    <>
       <div>
-      <Header/>
+      <Homepage/>
       </div>
 
 

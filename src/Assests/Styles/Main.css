@@ -29,6 +29,9 @@
     text-align: center;
 
 }
+.Homepage_container{
+    padding-top: 100px;
+}
 .Header_nav{
     background-color: #fff;
     box-shadow: 0 8px 5px -10px #000;
@@ -36,5 +39,48 @@
     position: fixed!important;
     width: 100%;
     z-index: 2;
+   
+}
+.Banner_form{
+    border: 1px solid rgb(158, 158, 158);
+    width: 100%;
+    border-radius: 40px;
+    padding: 9px;
+}
+.Banner_form>button{
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+.Banner_form>input{
+    background-image: url(../Images//icons8-search-50.png);
+    background-repeat:no-repeat ;
+    background-size: 32px;
+    padding-left: 55px;
+    background-position-y: center;
+    background-position-x:8px;
+    font-size: 17px;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.Count_Card{
+ box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+ border-radius: 15px;
+ display: grid;
+ place-items: center;
+ 
+}
+.CountCard_maincontainer{
+    background-color: #f4f8ff;
+}
+.Count_Card>span{
+    color: #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+     font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
 }
