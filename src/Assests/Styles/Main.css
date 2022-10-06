@@ -71,7 +71,7 @@
  
 }
 .CountCard_maincontainer{
-    background-color: #f4f8ff;
+    background-color: #75a8ff;
 }
 .Count_Card>span{
     color: #fff;
@@ -83,4 +83,21 @@
     align-items: center;
     justify-content: center;
    
+}
+.Heading{
+    justify-content: space-between;
+    align-items: center;
+}
+.Heading>div:after{
+    content: "";
+    height: 3px;
+    left: 0;
+   
+    position: absolute;
+    right: 0;
+    width: 120px;
+    background-color: hsl(218, 98%, 55%);
+}
+.card-img-top{
+    height: 180px;
 }

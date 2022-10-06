@@ -4,6 +4,10 @@ import Header from '../Components/Header';
 import Bannerimg from '../Assests/Images/bannerimage2.jpg';
 import { MdShareLocation, MdDesignServices } from "react-icons/md";
 import { FaHandshake } from "react-icons/fa";
+import Painting from '../Assests/Images/painting.jpg';
+import electrician from '../Assests/Images/electric.jpg';
+import Plumbing from '../Assests/Images/plumbing.jpg';
+import cardwash from '../Assests/Images/carwashing.jpg';
 function Homepage() {
     return (
         <>
@@ -75,8 +79,56 @@ function Homepage() {
                     </Container>
                 </div>
                 {/* Category Section */}
+
                 <div className='Category_maincontainer'>
-                      
+                    <Container>
+                        <div className='Heading d-flex position-relative'>
+                            <div>
+                                <h2 className='fw-bolder'>Browse By Category</h2>
+                            </div>
+                            <h6 className='fw-bold text-primary'>View all</h6>
+                        </div>
+                        <div>
+                            <Row xl={4} xs={1} className="pt-5">
+                                <Col >
+                                    <Card className='bg-white border-0'>
+                                        <Card.Img variant="top" src={Painting} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Painting services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0'>
+                                        <Card.Img variant="top" src={electrician} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Electrician services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0'>
+                                        <Card.Img variant="top" src={Plumbing} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>plumbing</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0'>
+                                        <Card.Img variant="top" src={cardwash} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Car services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                            </Row>
+                        </div>
+                    </Container>
                 </div>
             </div>
         </>

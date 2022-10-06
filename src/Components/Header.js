@@ -16,8 +16,9 @@ function Header() {
                         <Nav.Link href="#link">About</Nav.Link>
                         <Nav.Link href="#home">Ks-safe</Nav.Link>
                         <Nav.Link href="#link">Contact</Nav.Link>
+                        <Nav.Link href="#link">Login</Nav.Link>
                         <Nav.Link href="#link">
-                            <Button>Login</Button>
+                            <Button>Become a Service-Provider</Button>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
