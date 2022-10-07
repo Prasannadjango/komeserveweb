@@ -100,4 +100,29 @@
 }
 .card-img-top{
     height: 180px;
+    border-radius: inherit !important;
+}
+.Category_card{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%) !important;
+    border-radius: 15px !important;
+}
+
+.feedback_container{
+    
+   
+    width: 100%;
+    
+    padding-top: 20px;
+}
+.Reviewer_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.Reviewer_image>img{
+    border-radius: inherit;
+    object-position: center;
+}
+.Ratingstars>svg{
+  color: #FFD700;
 }

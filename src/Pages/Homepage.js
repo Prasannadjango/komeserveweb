@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap';
 import Header from '../Components/Header';
 import Bannerimg from '../Assests/Images/bannerimage2.jpg';
@@ -8,6 +8,12 @@ import Painting from '../Assests/Images/painting.jpg';
 import electrician from '../Assests/Images/electric.jpg';
 import Plumbing from '../Assests/Images/plumbing.jpg';
 import cardwash from '../Assests/Images/carwashing.jpg';
+import feedbackimg from '../Assests/Images/feedbackperson.jpg';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import {IoMdStar } from "react-icons/io";
+import {IoStarHalfOutline } from "react-icons/io5";
+
 function Homepage() {
     return (
         <>
@@ -80,7 +86,7 @@ function Homepage() {
                 </div>
                 {/* Category Section */}
 
-                <div className='Category_maincontainer'>
+                <div className='Category_maincontainer mb-5'>
                     <Container>
                         <div className='Heading d-flex position-relative'>
                             <div>
@@ -91,7 +97,7 @@ function Homepage() {
                         <div>
                             <Row xl={4} xs={1} className="pt-5">
                                 <Col >
-                                    <Card className='bg-white border-0'>
+                                    <Card className='bg-white border-0 Category_card'>
                                         <Card.Img variant="top" src={Painting} />
                                         <Card.Body >
                                             <Card.Title className='fw-bold text-start'>Painting services</Card.Title>
@@ -100,7 +106,7 @@ function Homepage() {
 
                                 </Col>
                                 <Col >
-                                    <Card className='bg-white border-0'>
+                                    <Card className='bg-white border-0 Category_card'>
                                         <Card.Img variant="top" src={electrician} />
                                         <Card.Body >
                                             <Card.Title className='fw-bold text-start'>Electrician services</Card.Title>
@@ -109,7 +115,7 @@ function Homepage() {
 
                                 </Col>
                                 <Col >
-                                    <Card className='bg-white border-0'>
+                                    <Card className='bg-white border-0 Category_card'>
                                         <Card.Img variant="top" src={Plumbing} />
                                         <Card.Body >
                                             <Card.Title className='fw-bold text-start'>plumbing</Card.Title>
@@ -118,7 +124,7 @@ function Homepage() {
 
                                 </Col>
                                 <Col >
-                                    <Card className='bg-white border-0'>
+                                    <Card className='bg-white border-0 Category_card'>
                                         <Card.Img variant="top" src={cardwash} />
                                         <Card.Body >
                                             <Card.Title className='fw-bold text-start'>Car services</Card.Title>
@@ -130,6 +136,190 @@ function Homepage() {
                         </div>
                     </Container>
                 </div>
+
+                {/* Featured section */}
+                <div className='Category_maincontainer mb-5'>
+                    <Container>
+                        <div className='Heading d-flex position-relative'>
+                            <div>
+                                <h2 className='fw-bolder'>Featured Services</h2>
+                            </div>
+
+                        </div>
+                        <div>
+                            <Row xl={4} xs={1} className="pt-5">
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={Painting} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Painting services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={electrician} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Electrician services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={Plumbing} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>plumbing</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={cardwash} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Car services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                            </Row>
+                        </div>
+                    </Container>
+                </div>
+
+                {/* Recommended section */}
+                <div className='Category_maincontainer mb-5'>
+                    <Container>
+                        <div className='Heading d-flex position-relative'>
+                            <div>
+                                <h2 className='fw-bolder'>Recommended Services</h2>
+                            </div>
+
+                        </div>
+                        <div>
+                            <Row xl={4} xs={1} className="pt-5">
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={Painting} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Painting services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={electrician} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Electrician services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={Plumbing} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>plumbing</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                                <Col >
+                                    <Card className='bg-white border-0 Category_card'>
+                                        <Card.Img variant="top" src={cardwash} />
+                                        <Card.Body >
+                                            <Card.Title className='fw-bold text-start'>Car services</Card.Title>
+                                        </Card.Body>
+                                    </Card>
+
+                                </Col>
+                            </Row>
+                        </div>
+                    </Container>
+                </div>
+
+                {/* Feedback section */}
+                <Container className='pb-4'>
+                    <div className='Heading d-flex position-relative'>
+                        <div>
+                            <h2 className='fw-bolder'>Our Customer Feedbacks</h2>
+                        </div>
+
+                    </div>
+
+                    <div className='feedback_container  px-4'>
+
+                        <Swiper navigation={true}
+                            slidesPerView={2}
+                            spaceBetween={30}
+                            pagination={{
+                                dynamicBullets: true,
+                              }}
+                            loop={true}
+                            autoplay={true}
+                            modules={[Navigation,Pagination]} className="mySwiper py-5">
+                            <SwiperSlide className='py-3 px-5'>
+                                <div className='Reviewer_image'>
+                                    <img src={feedbackimg} className='w-100 h-100' />
+                                </div>
+                                
+                                <h5 className='fw-bold pt-3'>Launa mary</h5>
+                                <div className='Ratingstars'>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoStarHalfOutline/>
+                                </div>
+                                <p className='pt-2 text-start text-secondary'>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra, diam nec mattis rhoncus, libero enim scelerisque quam, id convallis libero odio in velit. Ut faucibus ornare aliquet. 
+                                </p>
+                            </SwiperSlide>
+                            <SwiperSlide className='py-3 px-5'>
+                                <div className='Reviewer_image'>
+                                    <img src={feedbackimg} className='w-100 h-100' />
+                                </div>
+                                
+                                <h5 className='fw-bold pt-3'>Launa mary</h5>
+                                <div className='Ratingstars'>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoStarHalfOutline/>
+                                </div>
+                                <p className='pt-2 text-start text-secondary'>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra, diam nec mattis rhoncus, libero enim scelerisque quam, id convallis libero odio in velit. Ut faucibus ornare aliquet. 
+                                </p>
+                            </SwiperSlide>
+
+                            <SwiperSlide className='py-3 px-5'>
+                                <div className='Reviewer_image'>
+                                    <img src={feedbackimg} className='w-100 h-100' />
+                                </div>
+                                
+                                <h5 className='fw-bold pt-3'>Launa mary</h5>
+                                <div className='Ratingstars'>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoMdStar/>
+                                    <IoStarHalfOutline/>
+                                </div>
+                                <p className='pt-2 text-start text-secondary'>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra, diam nec mattis rhoncus, libero enim scelerisque quam, id convallis libero odio in velit. Ut faucibus ornare aliquet. 
+                                </p>
+                            </SwiperSlide>
+
+
+                        </Swiper>
+
+
+                    </div>
+                </Container>
             </div>
         </>
     );
