@@ -10,7 +10,7 @@ import Plumbing from '../Assests/Images/plumbing.jpg';
 import cardwash from '../Assests/Images/carwashing.jpg';
 import feedbackimg from '../Assests/Images/feedbackperson.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination ,Autoplay} from "swiper";
 import {IoMdStar } from "react-icons/io";
 import {IoStarHalfOutline } from "react-icons/io5";
 
@@ -259,8 +259,12 @@ function Homepage() {
                                 dynamicBullets: true,
                               }}
                             loop={true}
-                            autoplay={true}
-                            modules={[Navigation,Pagination]} className="mySwiper py-5">
+                            
+                            autoplay={{
+                                delay: 3500,
+                                disableOnInteraction: false,
+                              }}
+                            modules={[Navigation,Pagination,Autoplay]} className="mySwiper">
                             <SwiperSlide className='py-3 px-5'>
                                 <div className='Reviewer_image'>
                                     <img src={feedbackimg} className='w-100 h-100' />
@@ -317,9 +321,10 @@ function Homepage() {
 
                         </Swiper>
 
-
+                        
                     </div>
                 </Container>
+               
             </div>
         </>
     );

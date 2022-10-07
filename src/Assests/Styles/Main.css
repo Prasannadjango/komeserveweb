@@ -1,128 +1,193 @@
 @font-face {
     font-family: "sitefont";
     src: url(../Fonts/Montserrat-Regular.otf),
-    url(../Fonts/Montserrat-Regular.ttf),
-    url(../Fonts/Montserrat-Regular.woff),
-    url(../Fonts/Montserrat-Regular.woff2);
+        url(../Fonts/Montserrat-Regular.ttf),
+        url(../Fonts/Montserrat-Regular.woff),
+        url(../Fonts/Montserrat-Regular.woff2);
 }
+
 * {
-    box-sizing: border-box;
-    font-family: "sitefont" ;
+    padding: 0;
+    margin: 0;
+    font-family: "sitefont";
     text-transform: capitalize;
 }
-.Logo{
+
+.Logo {
     width: 100px;
     height: 70px;
 }
-.Header_links{
-    
+
+.Header_links {
+
     align-items: center;
 }
-.Header_links>a{
-   padding-left: 60px !important;
-   color: rgb(137 137 137);
-   font-weight: 600;
+
+.Header_links>a {
+    padding-left: 60px !important;
+    color: rgb(137 137 137);
+    font-weight: 600;
 }
-.Header_links>a>button{
+
+.Header_links>a>button {
     padding: 15px 30px;
     font-weight: bold;
     text-align: center;
 
 }
-.Homepage_container{
+.Loginpage_container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding-top: 12%;
+}
+
+.Homepage_container
+
+
+{
     padding-top: 100px;
 }
-.Header_nav{
+
+.Header_nav {
     background-color: #fff;
     box-shadow: 0 8px 5px -10px #000;
-    margin-bottom: 5px!important;
-    position: fixed!important;
+    margin-bottom: 5px !important;
+    position: fixed !important;
     width: 100%;
     z-index: 2;
-   
+
 }
-.Banner_form{
+
+.Banner_form {
     border: 1px solid rgb(158, 158, 158);
     width: 100%;
     border-radius: 40px;
     padding: 9px;
 }
-.Banner_form>button{
+
+.Banner_form>button {
     padding: 15px 30px;
     border-radius: 40px;
     font-weight: 600;
 }
-.Banner_form>input{
+
+.Banner_form>input {
     background-image: url(../Images//icons8-search-50.png);
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     background-size: 32px;
     padding-left: 55px;
     background-position-y: center;
-    background-position-x:8px;
+    background-position-x: 8px;
     font-size: 17px;
     box-shadow: none !important;
     outline: none !important;
 }
-.Count_Card{
- box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
- border-radius: 15px;
- display: grid;
- place-items: center;
- 
+
+.Count_Card {
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+
 }
-.CountCard_maincontainer{
+
+.CountCard_maincontainer {
     background-color: #75a8ff;
 }
-.Count_Card>span{
+
+.Count_Card>span {
     color: #fff;
     border-radius: 50%;
     width: 70px;
     height: 70px;
-     font-size: 45px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
-.Heading{
+
+.Heading {
     justify-content: space-between;
     align-items: center;
 }
-.Heading>div:after{
+
+.Heading>div:after {
     content: "";
     height: 3px;
     left: 0;
-   
+
     position: absolute;
     right: 0;
     width: 120px;
     background-color: hsl(218, 98%, 55%);
 }
-.card-img-top{
+
+.card-img-top {
     height: 180px;
     border-radius: inherit !important;
 }
-.Category_card{
+
+.Category_card,
+.Loginpage_container > div{
     box-shadow: 0 2px 8px rgb(0 0 0 / 15%) !important;
     border-radius: 15px !important;
+   
 }
 
-.feedback_container{
-    
-   
+.feedback_container {
+
+
     width: 100%;
-    
+
     padding-top: 20px;
 }
-.Reviewer_image{
+
+.Reviewer_image {
     width: 100px;
     height: 100px;
     border-radius: 50px;
 }
-.Reviewer_image>img{
+
+.Reviewer_image>img {
     border-radius: inherit;
     object-position: center;
 }
-.Ratingstars>svg{
-  color: #FFD700;
+
+.Ratingstars>svg {
+    color: #FFD700;
+}
+.Aboutus_cardscontainer{
+    background-color: #bfd7ff;
+}
+.Aboutus_container{
+    padding-top: 12%;
+}
+.About1{
+    background-color: #c91700;
+}
+.About2{
+    background-color: #00800b;
+}
+.About3{
+    background-color: #b96300;
+}
+.ServiceProvider_container{
+    padding-top: 12%;
+    display: flex;
+    justify-content: center;
+}
+.Serviceprovider_form{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%) !important;
+    border-radius: 15px !important;
+}
+input[type="file"]::-webkit-file-upload-button{
+    -webkit-appearance: none;
+    float: right;
+    margin: 0 0 0 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#d2d0d0), to(#f0f0f0));
+    background-image: -moz-linear-gradient(90deg, #d2d0d0 0%, #f0f0f0 100%);
 }
