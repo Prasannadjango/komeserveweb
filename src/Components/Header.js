@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from '../Assests/Images/logo.png';
 function Header() {
     return (
@@ -12,13 +13,30 @@ function Header() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav ">
                     <Nav className="me-auto Header_links">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">About</Nav.Link>
-                        <Nav.Link href="#home">Ks-safe</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
-                        <Nav.Link href="#link">Become a Service-Provider</Nav.Link>
+
+                        <Nav.Link href="#home">
+                            <Link to='/komeserveweb' className="text-secondary text-decoration-none">Home</Link>
+                        </Nav.Link>
+
+
                         <Nav.Link href="#link">
-                            <Button>Login</Button>
+                            <Link to='/Aboutus' className="text-secondary text-decoration-none">About-us</Link>
+                        </Nav.Link>
+                        <Nav.Link href="#home">Ks-safe</Nav.Link>
+                        <Nav.Link href="#link">
+                            <Link to='/Contactus' className="text-secondary text-decoration-none">Contact</Link>
+                               
+                        </Nav.Link>
+                        <Nav.Link href="#link">
+                            <Link to='/Serviceprovider' className="text-secondary text-decoration-none">Become a Serviceprovider</Link>
+                             
+                            </Nav.Link>
+                        <Nav.Link href="#link">
+                            <Link to='/Login'>
+                                <Button className='fw-bold px-5 py-3 fs-6'>
+                                    Login
+                                </Button>
+                            </Link>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

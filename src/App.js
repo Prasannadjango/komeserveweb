@@ -20,7 +20,7 @@ function App() {
    <>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Homepage/>}></Route>
+      <Route path='/komeserveweb' element={<Homepage/>}></Route>
       <Route path='/Login' element={<Login/>}></Route>
       <Route path='/Aboutus' element={<Aboutus/>}></Route>
       <Route path='/Serviceprovider' element={<Serviceprovider/>}></Route>

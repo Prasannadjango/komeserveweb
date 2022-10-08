@@ -29,7 +29,7 @@
     font-weight: 600;
 }
 
-.Header_links>a>button {
+.Login_btn{
     padding: 15px 30px;
     font-weight: bold;
     text-align: center;
