@@ -176,8 +176,12 @@
 .About4 {
   background-color: #c9bc00;
 }
+.signup_container{
+  padding-top: 13%;
+}
 .ServiceProvider_container,
-.Contactinfo_container{
+.Contactinfo_container
+{
     padding-top: 12%;
     display: flex;
     justify-content: center;

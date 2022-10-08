@@ -15,7 +15,7 @@ function Header() {
                     <Nav className="me-auto Header_links">
 
                         <Nav.Link href="#home">
-                            <Link to='/komeserveweb' className="text-secondary text-decoration-none">Home</Link>
+                            <Link to='/' className="text-secondary text-decoration-none">Home</Link>
                         </Nav.Link>
 
 

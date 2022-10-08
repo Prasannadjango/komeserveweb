@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Col, Form, Row, Button, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 
 
@@ -25,7 +26,9 @@ function Login() {
                 </Form>
                 <div className="pt-4 text-center">
                     <h6>Don't have an Account?</h6>
-                    <h6 className="fw-bold text-primary">Create one</h6>
+                    <h6 className="fw-bold text-primary">
+                        <Link to='/Signup' className="text-primary fw-bold text-decoration-none">Create one</Link>
+                        </h6>
                 </div>
 
                 <Modal show={show} onHide={handleClose}>
