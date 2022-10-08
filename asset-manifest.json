@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/komeserveweb/static/css/main.d019debc.css",
+    "main.js": "/komeserveweb/static/js/main.21de1001.js",
+    "static/js/787.e1d8dac8.chunk.js": "/komeserveweb/static/js/787.e1d8dac8.chunk.js",
+    "static/media/carwashing.jpg": "/komeserveweb/static/media/carwashing.15f64a6daacf333c99da.jpg",
+    "static/media/plumbing.jpg": "/komeserveweb/static/media/plumbing.c9fdba67f0b700263a3b.jpg",
+    "static/media/painting.jpg": "/komeserveweb/static/media/painting.712bfea947dd40894cb2.jpg",
+    "static/media/electric.jpg": "/komeserveweb/static/media/electric.0564335cea0c2803096a.jpg",
+    "static/media/Bannerimage.jpg": "/komeserveweb/static/media/Bannerimage.226829979b74b0943bd6.jpg",
+    "static/media/feedbackperson.jpg": "/komeserveweb/static/media/feedbackperson.3172159aeb1632762540.jpg",
+    "static/media/bannerimage2.jpg": "/komeserveweb/static/media/bannerimage2.e9157e036df8667adb9d.jpg",
+    "static/media/Montserrat-Regular.otf": "/komeserveweb/static/media/Montserrat-Regular.0cb31f9e78678045ac68.otf",
+    "static/media/Montserrat-Regular.ttf": "/komeserveweb/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/Montserrat-Regular.woff": "/komeserveweb/static/media/Montserrat-Regular.21e541a4a652a7fa0d6a.woff",
+    "static/media/Montserrat-Regular.woff2": "/komeserveweb/static/media/Montserrat-Regular.fc432875c59da8482816.woff2",
+    "static/media/logo.png": "/komeserveweb/static/media/logo.d4f2a40522557001c8d3.png",
+    "index.html": "/komeserveweb/index.html",
+    "main.d019debc.css.map": "/komeserveweb/static/css/main.d019debc.css.map",
+    "main.21de1001.js.map": "/komeserveweb/static/js/main.21de1001.js.map",
+    "787.e1d8dac8.chunk.js.map": "/komeserveweb/static/js/787.e1d8dac8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d019debc.css",
+    "static/js/main.21de1001.js"
+  ]
+}
