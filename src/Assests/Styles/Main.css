@@ -173,7 +173,11 @@
 .About3{
     background-color: #b96300;
 }
-.ServiceProvider_container{
+.About4 {
+  background-color: #c9bc00;
+}
+.ServiceProvider_container,
+.Contactinfo_container{
     padding-top: 12%;
     display: flex;
     justify-content: center;
@@ -190,4 +194,8 @@ input[type="file"]::-webkit-file-upload-button{
     border-radius: 4px;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#d2d0d0), to(#f0f0f0));
     background-image: -moz-linear-gradient(90deg, #d2d0d0 0%, #f0f0f0 100%);
+}
+.contact_form{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%) !important;
+    border-radius: 15px !important; 
 }

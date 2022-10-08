@@ -11,8 +11,8 @@ function Serviceprovider() {
                     <h3 className="text-center fw-bold display-6 pt-4">Become a Service-Provider</h3>
                     <Form className="pt-4">
                         <div>
-                        <Form.Label className="fw-bold fs-5">User Photo:</Form.Label>
-                        <Form.Control type="file" placeholder="No file chosen" />
+                            <Form.Label className="fw-bold fs-5">User Photo:</Form.Label>
+                            <Form.Control type="file" placeholder="No file chosen" />
                         </div>
                         <div className="pt-3">
                             <Form.Label className="fw-bold fs-5">Name:</Form.Label>
@@ -31,12 +31,12 @@ function Serviceprovider() {
                             <Form.Control type="Number" placeholder="Enter Your Pincode.." className="py-3" />
                         </div>
                         <div className="pt-3">
-                        <Form.Label className="fw-bold fs-5">Aadhar Front-side:</Form.Label>
-                        <Form.Control type="file" placeholder="No file chosen" />
+                            <Form.Label className="fw-bold fs-5">Aadhar Front-side:</Form.Label>
+                            <Form.Control type="file" placeholder="No file chosen" />
                         </div>
                         <div className="pt-3">
-                        <Form.Label className="fw-bold fs-5">Aadhar Back-side:</Form.Label>
-                        <Form.Control type="file" placeholder="No file chosen" />
+                            <Form.Label className="fw-bold fs-5">Aadhar Back-side:</Form.Label>
+                            <Form.Control type="file" placeholder="No file chosen" />
                         </div>
 
                         <Button className="py-3 fw-bold w-100 mt-4 fs-5" type='submit'>

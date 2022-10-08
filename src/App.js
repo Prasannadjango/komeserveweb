@@ -12,6 +12,7 @@ import Homepage from './Pages/Homepage';
 import Login from './Pages/Login';
 import Aboutus from './Pages/Aboutus';
 import Serviceprovider from './Pages/Serviceprovider';
+import Contactus from './Pages/Contactus';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path='/Login' element={<Login/>}></Route>
       <Route path='/Aboutus' element={<Aboutus/>}></Route>
       <Route path='/Serviceprovider' element={<Serviceprovider/>}></Route>
+      <Route path='/Contactus' element={<Contactus/>}></Route>
     </Routes>
     </BrowserRouter>
 
